@@ -191,6 +191,8 @@ class Main extends Component {
                   this.setState({ filtro: text });
                   this.filtraModelos();
                 }}
+                autoCapitalize="none"
+                autoCorrect={false}
               />
               <Image source={require('../../assets/images/search.png')} />
             </View>
@@ -199,7 +201,7 @@ class Main extends Component {
         <ScrollView style={styles.carList}>
           <Text style={styles.message}>{!!error && error}</Text>
           {loading ? (
-            <ActivityIndicator size="small" color="#0000ff" />
+            <ActivityIndicator size="small" color="#1837e2" />
           ) : (
             <>
               {data.length !== 0 ? (
