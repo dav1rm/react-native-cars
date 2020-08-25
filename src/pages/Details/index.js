@@ -10,7 +10,7 @@ import styles from './styles';
 const Details = ({ navigation }) => {
   const modelo = navigation.getParam('modelo', null);
   return (
-    <ScrollView>
+    <ScrollView contentContainerStyle={{ flexGrow: 1 }} >
       <View style={styles.container}>
         <View style={styles.header}>
           <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('Main')}>
